@@ -11,8 +11,8 @@ program
   .helpOption('-h, --help', 'output usage information')
   .argument('<filepath1>')
   .argument('<filepath2>')
-  .action((filetype1, filetype2) => {
-    const result = genDiff(filetype1, filetype2, program.opts().format);
+  .action((filepath1, filepath2) => {
+    const result = genDiff(filepath1, filepath2, program.opts().format);
     console.log(result);
   });
 program.parse();
