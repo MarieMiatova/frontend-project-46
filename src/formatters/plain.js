@@ -1,37 +1,38 @@
-import _ from 'lodash';
-
-const stringify = (value) => {
-  if (_.isObject(value)) {
+const stringfy = (value) => {
+  if (typeof value === 'object' && value !== null) {
     return '[complex value]';
   }
+  if (typeof value === 'string') {
+    return `'${value}'`;
+  }
 
-  return _.isString(value) ? `'${value}'` : value;
+  return value;
 };
 
-const createPlainDiff = (value) => {
-  const iter = (currentValue, currentKey = '') => {
-    const lines = currentValue.map((item) => {
-      const path = `${currentKey}${item.key}`;
-
-      switch (item.type) {
+const plain = (node) => {
+  const iter = (currentNode, depth = '') => {
+    const nodeLines = currentNode.map((item) => {
+      const { key, value, type } = item;
+      switch (type) {
         case 'nested':
-          return iter(item.children, `${path}.`);
+          return iter(item.children, `${depth}${key}.`);
         case 'added':
-          return `Property '${path}' was ${item.type} with value: ${stringify(item.value)}`;
-        case 'removed':
-          return `Property '${path}' was ${item.type}`;
-        case 'updated':
-          return `Property '${path}' was ${item.type}. From ${stringify(item.value1)} to ${stringify(item.value2)}`;
+          return `Property '${depth}${key}' was added with value: ${stringfy(value)}`;
+        case 'deleted':
+          return `Property '${depth}${key}' was removed`;
+        case 'changed':
+          return `Property '${depth}${key}' was updated. From ${stringfy(item.value1)} to ${stringfy(item.value2)}`;
         case 'unchanged':
           return null;
         default:
-          return null;
+          throw new Error('Wrong type');
       }
     });
+    const result = nodeLines.filter((item) => item !== null);
 
-    return lines.filter((line) => line).join('\n');
+    return result.join('\n');
   };
-  return iter(value);
-};
 
-export default createPlainDiff;
+  return iter(node);
+};
+export default plain;
