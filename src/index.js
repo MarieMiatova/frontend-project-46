@@ -2,7 +2,7 @@ import path from 'node:path';
 import { readFileSync } from 'node:fs';
 import parse from './parsers.js';
 import formattedFile from './formatters/index.js';
-import getDiffTree from './getDiffTree.js';
+import getDiffTree from './difftree.js';
 
 const getFullPath = (file) => path.resolve(process.cwd(), file);
 
