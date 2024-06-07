@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Mon Jun  3 10:32:37 2024
+
+# Make data base, printed on Wed Jun  5 11:16:39 2024
 
 # Variables
 
@@ -44,7 +47,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Kk77IA3KrM/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.gO9UViBICc/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -64,7 +67,7 @@ VSCODE_CODE_CACHE_PATH = /Users/manefastekolnikova/Library/Application Support/C
 # environment
 LOGNAME = manefastekolnikova
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -86,6 +89,7 @@ USER = manefastekolnikova
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
+ 
 MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # default
 .VARIABLES := 
@@ -130,7 +134,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 36084
+VSCODE_PID = 15568
 # variable set hash-table stats:
 # Load=60/1024=6%, Rehash=0, Collisions=1/84=1%
 
@@ -140,9 +144,9 @@ VSCODE_PID = 36084
 
 # Directories
 
-# . (device 16777220, inode 9725718): 16 files, no impossibilities.
+# . (device 16777220, inode 10141164): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -176,7 +180,7 @@ test-coverage:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-06-03 10:32:28
+#  Last modified 2024-06-05 11:15:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -241,8 +245,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jun  3 10:32:37 2024
+# Finished Make data base on Wed Jun  5 11:16:39 2024
 
  
-make: *** No rule to make target `all'.  Stop.
-
