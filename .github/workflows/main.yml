@@ -40,6 +40,7 @@ jobs:
         uses: paambaati/codeclimate-action@v5.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          NODE_OPTIONS: --experimental-vm-modules
         with:
-          coverageCommand: NODE_OPTIONS=--experimental-vm-modules npm test -- --coverage --coverageProvider=v8
-          debug: true
+          coverageCommand: npm test -- --coverage --coverageProvider=v8
+          debug: true 
