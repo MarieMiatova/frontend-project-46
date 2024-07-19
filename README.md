@@ -8,3 +8,6 @@
 
 
 [![Node CI](https://github.com/MarieMiatova/frontend-project-46/actions/workflows/main.yml/badge.svg)](https://github.com/MarieMiatova/frontend-project-46/actions/workflows/main.yml)
+
+
+![example workflow](https://github.com/MarieMiatova/frontend-project-46/actions/workflows/main.yml/badge.svg)
