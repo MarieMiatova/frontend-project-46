@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/manefastekolnikova/frontend-project-46'
+make: Entering directory `/Users/manefastekolnikova/change 2/frontend-project-46'
 npm ci
-make: Leaving directory `/Users/manefastekolnikova/frontend-project-46'
+make: Leaving directory `/Users/manefastekolnikova/change 2/frontend-project-46'
  

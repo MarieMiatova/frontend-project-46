@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Fri Jul 19 13:09:21 2024
+# Make data base, printed on Wed Sep 11 13:33:17 2024
 
 # Variables
 
@@ -24,7 +24,7 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/manefastekolnikova/frontend-project-46
+CURDIR := /Users/manefastekolnikova/change 2/frontend-project-46
 # makefile
 SHELL = /bin/sh
 # environment
@@ -44,11 +44,11 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.8L1fwHNwvF/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.fbNz9XI0EJ/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/manefastekolnikova/frontend-project-46
+PWD = /Users/manefastekolnikova/change 2/frontend-project-46
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -64,7 +64,7 @@ VSCODE_CODE_CACHE_PATH = /Users/manefastekolnikova/Library/Application Support/C
 # environment
 LOGNAME = manefastekolnikova
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -130,7 +130,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 97909
+VSCODE_PID = 24497
 # variable set hash-table stats:
 # Load=60/1024=6%, Rehash=0, Collisions=1/84=1%
 
@@ -140,7 +140,7 @@ VSCODE_PID = 97909
 
 # Directories
 
-# . (device 16777221, inode 10141164): 17 files, no impossibilities.
+# . (device 16777225, inode 13793889): 17 files, no impossibilities.
 
 # 17 files, no impossibilities in 1 directories.
 
@@ -164,7 +164,7 @@ test-coverage:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 17):
-	npm test -- --coverage --coverageProvider=v8
+	NODE_OPTIONS=--experimental-vm-modules npm test -- --coverage --coverageProvider=v8
 	
 
 # Not a target:
@@ -176,7 +176,7 @@ test-coverage:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-06-05 11:15:18
+#  Last modified 2024-09-11 13:32:07
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -241,7 +241,7 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jul 19 13:09:21 2024
+# Finished Make data base on Wed Sep 11 13:33:17 2024
 
  
 make: *** No rule to make target `all'.  Stop.
