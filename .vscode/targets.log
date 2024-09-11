@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed Sep 11 13:55:14 2024
+# Make data base, printed on Wed Sep 11 15:22:52 2024
 
 # Variables
 
@@ -140,7 +140,7 @@ VSCODE_PID = 24497
 
 # Directories
 
-# . (device 16777225, inode 13870241): 17 files, no impossibilities.
+# . (device 16777225, inode 13922836): 17 files, no impossibilities.
 
 # 17 files, no impossibilities in 1 directories.
 
@@ -163,7 +163,7 @@ test-coverage:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 17):
+#  commands to execute (from `Makefile', line 14):
 	NODE_OPTIONS=--experimental-vm-modules npm test -- --coverage --coverageProvider=v8
 	
 
@@ -176,7 +176,7 @@ test-coverage:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-09-11 13:44:38
+#  Last modified 2024-09-11 15:22:42
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -186,7 +186,7 @@ test:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 14):
+#  commands to execute (from `Makefile', line 11):
 	NODE_OPTIONS=--experimental-vm-modules npx jest
 	
 
@@ -208,16 +208,8 @@ lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 11):
-	npx eslint .
-	
-
-gendiff:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 #  commands to execute (from `Makefile', line 8):
-	node bin/gendiff.js filepath1 filepath2
+	npx eslint .
 	
 
 install:
@@ -229,7 +221,7 @@ install:
 	
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/22=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -241,7 +233,7 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Sep 11 13:55:14 2024
+# Finished Make data base on Wed Sep 11 15:22:52 2024
 
  
 make: *** No rule to make target `all'.  Stop.
