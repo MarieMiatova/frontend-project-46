@@ -16,7 +16,7 @@
 
 Проверка линтера.
 
-	npx eslint .
+    npx eslint .
 
 Запуск тестов.
 
@@ -25,7 +25,6 @@
  [![asciicast](https://asciinema.org/a/WeueP7abzJE9rU7cSth8PVZkW.svg)](https://asciinema.org/a/WeueP7abzJE9rU7cSth8PVZkW)   
 
     
-
 Вывод справки.
 
     gendiff -h
