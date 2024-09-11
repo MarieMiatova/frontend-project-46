@@ -22,6 +22,8 @@
 
     NODE_OPTIONS=--experimental-vm-modules npx jest
 
+ [![asciicast](https://asciinema.org/a/WeueP7abzJE9rU7cSth8PVZkW.svg)](https://asciinema.org/a/WeueP7abzJE9rU7cSth8PVZkW)   
+
 https://asciinema.org/a/WeueP7abzJE9rU7cSth8PVZkW    
 
 Вывод справки.
