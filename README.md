@@ -10,7 +10,7 @@
 [![Node CI](https://github.com/MarieMiatova/frontend-project-46/actions/workflows/main.yml/badge.svg)](https://github.com/MarieMiatova/frontend-project-46/actions/workflows/main.yml)
 
 
-[![asciicast](https://asciinema.org/a/lsq1JM9pycI6BpYJ754fFa8BZ.svg)](https://asciinema.org/a/lsq1JM9pycI6BpYJ754fFa8BZ)
+[![asciicast](https://asciinema.org/a/s8p8udwJJHFIV6hlARrLhngOV.svg)](https://asciinema.org/a/s8p8udwJJHFIV6hlARrLhngOV)
 
 Установка.
 
